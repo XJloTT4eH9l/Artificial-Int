@@ -1,3 +1,4 @@
+//slider
 $(document).ready(function(){
     $('.slider').slick({
         infinite: true,
@@ -10,3 +11,17 @@ $(document).ready(function(){
         speed: 1000
     });
 });
+// smooth scroll
+let anchors = document.querySelectorAll('header a[href*="#"]');
+
+for(anchor of anchors){
+    if(anchor){
+        anchor.addEventListener('click', function(event){
+            event.preventDefault();
+            anchorId = this.getAttribute('href');
+            document.querySelector(anchorId).scrollIntoView({
+                behavior : 'smooth', block : 'start'
+            })
+        })
+    }
+}
