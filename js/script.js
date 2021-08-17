@@ -8,7 +8,26 @@ $(document).ready(function(){
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000,
-        speed: 1000
+        speed: 1000,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 500,
+              }
+            },
+          ]
     });
 });
 // smooth scroll

@@ -317,6 +317,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -353,6 +355,7 @@ body {
 }
 
 .slider__item {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +372,7 @@ body {
   text-align: center;
   padding-top: 16px;
   padding-bottom: 30px;
-  margin: 0 15px;
+  margin-right: 10px;
 }
 
 .slider__item:first-child {
@@ -649,6 +652,75 @@ body {
   margin-right: 25px;
 }
 
+@media (max-width: 1600px) {
+  .intro__img {
+    margin-right: -100px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .intro__img {
+    width: 532px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1436px) {
+  .about__img {
+    margin-left: 0;
+    width: 625px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1180px) {
+  .intro__content {
+    margin: 0 auto;
+  }
+
+  .intro__img {
+    margin: 0 auto;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .blog__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .blog__content {
+    margin: 0 auto;
+  }
+
+  .blog__img {
+    width: 542px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1153px) {
+  .about {
+    margin-top: 129px;
+  }
+
+  .about__img {
+    margin: 0 auto;
+  }
+
+  .about__content {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .burger {
     display: block;
@@ -666,23 +738,37 @@ body {
     display: none;
   }
 
-  .intro__content {
-    margin: 0 auto;
-  }
-
   .intro__title {
     font-size: 50px;
   }
 
-  .intro__img {
-    margin: 0 auto;
-    width: 532px;
-    height: auto;
-    margin-top: 30px;
+  .companys__logo {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .slider__item {
+    width: 50%;
+  }
+
+  .footer__inner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer__item--interesting {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 38px;
+  }
+
   .intro__content {
     text-align: center;
   }
@@ -694,9 +780,52 @@ body {
   .intro__img {
     width: 432px;
   }
+
+  .companys__img {
+    width: 218px;
+    height: auto;
+  }
+
+  .about {
+    margin-top: 80px;
+  }
+
+  .about__img {
+    width: 525px;
+  }
+
+  .blog {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 596px) {
+  .footer__item {
+    margin-bottom: 30px;
+  }
+
+  .footer__title {
+    margin-bottom: 20px;
+  }
+
+  .footer__item:last-child {
+    margin-left: 0;
+  }
+
+  .footer__text1 {
+    margin-bottom: 20px;
+  }
+
+  .footer__switch-language {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 580px) {
+  .title {
+    font-size: 34px;
+  }
+
   .btn {
     padding: 12px 26px;
     font-size: 14px;
@@ -727,6 +856,27 @@ body {
   .intro__img {
     width: 332px;
   }
+
+  .companys__logo {
+    width: 100%;
+  }
+
+  .about__img {
+    width: 425px;
+  }
+
+  .about__text {
+    margin-bottom: 30px;
+  }
+
+  .blog__img {
+    width: 442px;
+  }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 484px) {
@@ -746,6 +896,14 @@ body {
 }
 
 @media (max-width: 480px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
   .btn {
     padding: 10px 22px;
   }
@@ -766,6 +924,34 @@ body {
   .intro__img {
     width: 272px;
   }
+
+  .about {
+    margin-top: 50px;
+  }
+
+  .about__img {
+    width: 325px;
+  }
+
+  .carousel {
+    margin: 100px 0;
+  }
+
+  .slider__title {
+    font-size: 22px;
+  }
+
+  .slider__text {
+    font-size: 14px;
+  }
+
+  .blog {
+    margin-bottom: 50px;
+  }
+
+  .blog__img {
+    width: 342px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -778,5 +964,19 @@ body {
     width: 12px;
     height: auto;
     top: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 360px) {
+  .about {
+    margin-top: 30px;
+  }
+
+  .about__img {
+    width: 225px;
+  }
+
+  .blog__img {
+    width: 280px;
   }
 }
