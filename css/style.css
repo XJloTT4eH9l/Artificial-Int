@@ -143,6 +143,13 @@ body {
   font-size: 16px;
   background-color: #3A68B8;
   color: #fff;
+  -webkit-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #163b7a;
 }
 
 .btn-video {
@@ -161,6 +168,7 @@ body {
   display: none;
   padding: 10px 8px;
   background-color: transparent;
+  z-index: 5;
 }
 
 .burger__item {
@@ -191,6 +199,54 @@ body {
   background-color: inherit;
 }
 
+.mobile__menu {
+  background-color: #18202c;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list-mobile {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav__list-mobile li {
+  margin-bottom: 40px;
+}
+
+.mobile__menu__active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -198,7 +254,7 @@ body {
   width: 100%;
   z-index: 5;
   padding: 24px 0;
-  background-color: #020a18;
+  background-color: #18202c;
 }
 
 .header__inner {
@@ -240,6 +296,14 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.37;
+  padding-bottom: 5px;
+  -webkit-transition: border 0.1s linear;
+  -o-transition: border 0.1s linear;
+  transition: border 0.1s linear;
+}
+
+.nav__link:hover {
+  border-bottom: 3px solid #fff;
 }
 
 .intro {
@@ -475,7 +539,7 @@ body {
   position: relative;
   padding-top: 79px;
   padding-bottom: 144px;
-  background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.2) -41.9%, rgba(255, 255, 255, 0.4) 260.24%);
+  background-color: #18202c;
 }
 
 .footer li {
