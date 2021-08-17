@@ -238,7 +238,7 @@ body {
 }
 
 .nav__list-mobile li {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .mobile__menu__active {
@@ -703,9 +703,6 @@ body {
   -webkit-transform: translate(10px, -2px) rotate(-135deg);
       -ms-transform: translate(10px, -2px) rotate(-135deg);
           transform: translate(10px, -2px) rotate(-135deg);
-  -webkit-transform: translate();
-      -ms-transform: translate();
-          transform: translate();
   width: 10px;
   height: 10px;
   border-top: 3px solid #fff;

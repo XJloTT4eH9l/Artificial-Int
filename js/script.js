@@ -41,14 +41,24 @@ for(anchor of anchors){
             document.querySelector(anchorId).scrollIntoView({
                 behavior : 'smooth', block : 'start'
             })
-            mobileMenu.classList.toggle('mobile__menu__active');
         })
     }
 }
 //mobile__menu
 let burgerButton = document.querySelector(".burger");
 let mobileMenu = document.querySelector(".mobile__menu");
+let links = document.querySelectorAll('#mobileLink');
+
+for(link of links){
+  link.addEventListener('click', function(event){
+    event.preventDefault();
+    mobileMenu.classList.toggle('mobile__menu__active');
+  })
+}
+
 
 burgerButton.addEventListener('click', function(){
   mobileMenu.classList.toggle('mobile__menu__active');
+  burgerButton.classList
 })
+
